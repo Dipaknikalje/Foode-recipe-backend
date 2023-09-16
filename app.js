@@ -8,7 +8,7 @@ const recipeRoute = require("./Routes/recipeRoute");
 dotenv.config();
 const app = express();
 app.use(express.json());
-// app.use('/user',userroute)
+
 const corsOption = {
   origin: "*",
 };

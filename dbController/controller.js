@@ -12,6 +12,7 @@ const Register = async (req, res) => {
     console.log("in exist");
     return res.send({
       msg: "User already register, please try a different user or login",
+      token: null,
     });
   }
 
