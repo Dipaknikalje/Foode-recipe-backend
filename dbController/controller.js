@@ -31,6 +31,7 @@ const Register = async (req, res) => {
   return res.send({
     msg: "User succesfully registered",
     token: token,
+    email: email,
   });
 };
 
@@ -57,6 +58,7 @@ const Login = async (req, res) => {
         msg: "User logged in successfully",
         isLoggedIn: true,
         token: token,
+        email: email,
       });
     } else {
       return res.send({
