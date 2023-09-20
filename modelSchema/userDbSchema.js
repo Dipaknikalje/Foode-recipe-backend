@@ -12,10 +12,8 @@ const user = new mongoose.Schema({
     type: String,
     required: true,
   },
-  saved_recipes: [],
-  createdAt: {
-    type: Date,
-    default: Date.now(),
+  token: {
+    type: String,
   },
 });
 

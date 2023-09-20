@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const url =
-  "mongodb+srv://dipaknikalje80:dipakrecepi@recepi.2hbyyrw.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://dipaknikalje80:dipaknikalje@recipe.91sje1t.mongodb.net/?retryWrites=true&w=majority";
 // const url="mongodb://127.0.0.1:27017/ecomapp"
 
 const connect = async () => {

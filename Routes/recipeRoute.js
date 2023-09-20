@@ -7,9 +7,9 @@ const {
 
 const recipeRoute = require("express").Router();
 
-recipeRoute.put("/saverecipe", bookRecipe);
-recipeRoute.put("/deleterecipe", deleteSavedRecipe);
-recipeRoute.get("/fetchrecipe", fetchSavedRecipe);
+recipeRoute.post("/saverecipe", bookRecipe);
+recipeRoute.delete("/deleterecipe", deleteSavedRecipe);
+recipeRoute.get("/fetchrecipe/:email", fetchSavedRecipe);
 recipeRoute.get("/userdetails", UserDetailsData);
 
 module.exports = recipeRoute;
